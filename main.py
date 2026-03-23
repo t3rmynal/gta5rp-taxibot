@@ -11,7 +11,7 @@ init(autoreset=True)
 
 pyautogui.FAILSAFE = False
 
-# ---- настройки ----
+# cfg
 TARGET_COLOR = (0x30, 0x43, 0x68)  # цвет
 TOLERANCE    = 5                    
 REGION       = (1120, 350, 1350, 900)  # область скрина
@@ -30,13 +30,12 @@ LOGO = r"""
 
 BANNER = """\
   ╔══════════════════════════════╗
-  ║      GTA5RP  -  TaxiBot      ║
-  ║   by t3rmynal  |  python     ║
+  ║   Taxibot  -  by t3rmynal    ║
   ╚══════════════════════════════╝"""
 
 
 def play_sound():
-    # звук принятия вызова
+    # звук вызова
     for freq, ms in [(880, 90), (1046, 90), (1318, 220)]:
         winsound.Beep(freq, ms)
 
